@@ -4,14 +4,7 @@ require'pry'
 
 
 PAGE_URL = "http://www2.assemblee-nationale.fr/deputes/liste/alphabetique"
-=begin
-def first_name
-  doc = Nokogiri::HTML(open("http://www2.assemblee-nationale.fr/deputes/liste/alphabetique"))
-    @first= doc.xpath('//*[@id="deputes-list"]/div/ul/li/a').map { |item| item.text}
-puts @first
-end
-first_name
-=end
+
 
 def depute
   doc = Nokogiri::HTML(open("http://www2.assemblee-nationale.fr/deputes/liste/alphabetique"))
